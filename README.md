@@ -122,3 +122,7 @@ dist/TimeClock.exe
 ## 📄 许可证
 
 本项目采用 [MIT License](LICENSE)。
+
+
+## ✉️ 联系
+如果您在使用过程中遇到任何问题、有任何功能建议，或发现了 Bug，欢迎通过 GitHub Issues 提交。
