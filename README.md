@@ -108,7 +108,7 @@ dist/TimeClock.exe
 > - **平台限制**：只能在对应平台上打包，例如 Windows 上生成 `.exe`，macOS 上生成 `.app`  
 > - **字体依赖**：程序使用了 `Noto Sans SC`（思源黑体 SC），若系统未安装，将回退到默认字体  
 
-- **📄 配置文件：**  
+**📄 配置文件：**  
   配置文件默认保存在：
 
   ```
@@ -118,7 +118,7 @@ dist/TimeClock.exe
   %localappdata%\TimeClock\TimeClock\config.json
   ```
 
-- **📝日志目录：**  
+**📝日志目录：**  
   日志文件默认保存在：
 
   ```
