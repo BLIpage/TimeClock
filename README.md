@@ -126,3 +126,6 @@ dist/TimeClock.exe
 
 ## ✉️ 联系
 如果您在使用过程中遇到任何问题、有任何功能建议，或发现了 Bug，欢迎通过 GitHub Issues 提交。
+
+---
+本项目代码均由[ChatGPT](https://chatgpt.com/)生成，代码详细注释由[Gemini](https://gemini.google.com/)生成
