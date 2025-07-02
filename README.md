@@ -43,6 +43,40 @@
 * **requests:** 用于 NTP 时间同步的网络请求。
 * **platformdirs:** 用于获取跨平台的配置目录路径。
 
+### 📦 打包为独立可执行文件 (使用 PyInstaller)
+
+* 为了让其他用户无需安装 Python 环境也能运行您的应用，您可以将其打包成一个独立的跨平台可执行文件（例如 Windows 上的 .exe）。我们推荐使用 PyInstaller 工具。
+
+1.  **安装 PyInstaller**
+     * 如果您尚未安装 PyInstaller，请运行以下命令：
+    ```bash
+    pip install pyinstaller
+    ```
+2.  **安装 PyInstaller**
+     * 在命令行中，切换到您的项目根目录，然后运行以下 PyInstaller 命令：
+    ```bash
+    pyinstaller --name "TimeClock" --onefile --windowed --icon "clock.ico" "TimeClockWindows.py"
+    ```
+
+
+#### 命令解释：
+
+* **--name "TimeClock" : ** 设置生成的可执行文件的名称。
+* **--onefile:** 将所有组件（包括 Python 解释器和所有依赖）打包成一个独立的执行文件。
+* **--windowed (或 --noconsole):** 生成一个没有控制台窗口的 GUI 应用程序，双击即可运行，不会弹出命令行窗口。
+* **--icon "clock.ico": ** 指定应用程序的图标文件。
+
+3.  **获取可执行文件**
+打包过程可能需要几分钟。完成后，您会在项目根目录下看到一个名为 dist 的新文件夹。最终生成的可执行文件就在这个 dist 文件夹内（例如在 Windows 上是 dist/TransparentClock.exe）。
+
+注意事项：
+
+文件大小： 由于 PyInstaller 会将 Python 解释器和所有依赖（尤其是 PySide6 库）打包进去，生成的可执行文件会相对较大，这是正常现象。
+
+跨平台兼容性： PyInstaller 是跨平台的，但它只能在当前操作系统上打包出该操作系统对应的可执行文件。例如，在 Windows 上打包会生成 .exe，在 macOS 上会生成 .app，在 Linux 上则生成二进制可执行文件。
+
+字体： 本应用使用了 "Noto Sans SC" (思源黑体 SC) 字体。如果目标系统没有安装该字体，可能会回退到系统默认的中文字体进行显示。
+
 ### 💡 未来展望
 
 * [ ] 增加更多字体选择。
