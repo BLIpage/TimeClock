@@ -66,7 +66,7 @@
 
 ## 📦 依赖
 
-- `PySide6`：用于构建图形用户界面  （⚠️ `PySide6` 需要 `Python 3.8 `及更高版本。）
+- `PySide6`：用于构建图形用户界面  （⚠️需要 `Python 3.8 `及更高版本。）
 - `requests`：用于 NTP 时间同步  
 - `platformdirs`：用于获取跨平台配置目录路径
 
