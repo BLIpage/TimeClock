@@ -27,7 +27,7 @@
     ```
 2.  **安装依赖：**
     ```bash
-    pip install PySide6 requests
+    pip install PySide6 requests platformdirs
     ```
 3.  **运行程序：**
     ```bash
