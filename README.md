@@ -22,7 +22,7 @@
 
 1.  **克隆仓库：**
     ```bash
-    git clone [https://github.com/BLIpage/TimeClock.git](https://github.com/BLIpage/TimeClock.git)
+    git clone https://github.com/BLIpage/TimeClock.git
     cd TimeClock
     ```
 2.  **安装依赖：**
